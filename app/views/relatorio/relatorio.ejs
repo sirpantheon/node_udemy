@@ -9,6 +9,29 @@
 <body>
 
     <h1>Relatorio</h1>
+    <table>
+        <tr>
+            <td>id</td>
+            <td>data</td>
+            <td>nome</td>
+            <td>registro</td>
+            <td>especialidade</td>
+            <td>privativo</td>
+        </tr>
+        <% for(var i = 0; i < controle.length; i++){ %>
+            <tr>
+                <td>
+                    <%= controle[i].id_controle %>
+                </td>
+                <td>
+                    <%= controle[i].nome %>
+                </td>
+                <td>
+                    <%= controle[i].registro %>
+                </td>
+            </tr>
+            <% } %>
+    </table>
 
 </body>
 
