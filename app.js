@@ -1,11 +1,7 @@
 const app = require("./config/server");
+const dbConnection = require("./config/dbConnection")
 
-const db = require("./database/db")
-const route_form_add = require("./app/routes/route_form_add")(app);
-const route_home = require("./app/routes/route_home")(app);
-const route_relatorio = require("./app/routes/route_relatorio")(app);
-
-//aula 24...
+//aula 32...
 
 app.listen(3000, () => {
     console.log("Sevidor Disponivel")

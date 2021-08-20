@@ -12,22 +12,31 @@
     <table>
         <tr>
             <td>id</td>
-            <td>data</td>
+            <td>data da entrega</td>
             <td>nome</td>
             <td>registro</td>
             <td>especialidade</td>
             <td>privativo</td>
         </tr>
-        <% for(var i = 0; i < controle.length; i++){ %>
+        <% for(let i = 0; i <= relatorio.length; i++){ %>
             <tr>
                 <td>
-                    <%= controle[i].id_controle %>
+                    <%= relatorio[i].id_controle %>
                 </td>
                 <td>
-                    <%= controle[i].nome %>
+                    <%= relatorio[i].data_criacao %>
                 </td>
                 <td>
-                    <%= controle[i].registro %>
+                    <%= relatorio[i].nome %>
+                </td>
+                <td>
+                    <%= relatorio[i].registro %>
+                </td>
+                <td>
+                    <%= relatorio[i].especialidade %>
+                </td>
+                <td>
+                    <%= relatorio[i].privativo %>
                 </td>
             </tr>
             <% } %>
