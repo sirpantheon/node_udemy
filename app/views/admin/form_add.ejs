@@ -3,12 +3,36 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Formulario de cadastro de Noticia</title>
+    <title>Formulario de Cadastro </title>
 </head>
 
 <body>
 
-    <h1>Adicionar noticia</h1>
+    <h1>Adicionar Cadastro</h1>
+
+    <form action="/relatorio/salvar" method="POST">
+        <label for="">nome</label>
+        <input type="text" id="nome" name="nome" placeholder="nome">
+        <br>
+        <label for="">registro</label>
+        <input type="text" id="registro" name="registro" placeholder="CRM/RG/CPF/DRT">
+        <br>
+        <label for="">especialidade</label>
+        <input type="text" id="especialidade" name="especialidade" placeholder="especialidade">
+        <br>
+        <label for="privativo">privativo</label>
+        <select id="privativo" name="privativo">
+          <option value="P">P</option>
+          <option value="M">M</option>
+          <option value="G">G</option>
+          <option value="GG">GG</option>
+          <option value="XG">XG</option>
+        </select>
+        <br>
+        <input type="submit" name="enviar" value="enviar">
+
+    </form>
+
 
 </body>
 

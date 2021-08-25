@@ -1,7 +1,6 @@
 const dbconnection = require('../../config/db')
 const modelRelatorio = require('../models/model_relatorio')
 
-
 module.exports = (app) => {
 
     const connection = dbconnection();

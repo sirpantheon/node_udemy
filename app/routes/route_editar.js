@@ -1,4 +1,5 @@
 const dbconnection = require('../../config/db')
+const modelRelatorio = require('../models/model_relatorio')
 
 module.exports = (app) => {
 
@@ -6,8 +7,8 @@ module.exports = (app) => {
 
     app.get('/editar', (req, res) => {
 
-        connection.query('select * from controle where id_controle = 2', (erro, result) => {
-            res.render("relatorio/editar", { editar: result });
+        modelRelatorio.getEditar(connection, (erro, result) => {
+            res.render("relatorio/editar", { editar: result })
         });
     });
 }
