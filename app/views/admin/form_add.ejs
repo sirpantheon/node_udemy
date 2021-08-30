@@ -10,14 +10,14 @@
 
     <h1>Adicionar Cadastro</h1>
 
-    <form action="/relatorio/salvar" method="POST">
-        <label for="">nome</label>
+    <form action="/salvar" method="POST">
+        <label for="nome">nome</label>
         <input type="text" id="nome" name="nome" placeholder="nome">
         <br>
         <label for="">registro</label>
         <input type="text" id="registro" name="registro" placeholder="CRM/RG/CPF/DRT">
         <br>
-        <label for="">especialidade</label>
+        <label for="especialidade">especialidade</label>
         <input type="text" id="especialidade" name="especialidade" placeholder="especialidade">
         <br>
         <label for="privativo">privativo</label>
@@ -29,7 +29,7 @@
           <option value="XG">XG</option>
         </select>
         <br>
-        <input type="submit" name="enviar" value="enviar">
+        <button type="submit" class="btn btn-primary">Enviar</button>
 
     </form>
 
